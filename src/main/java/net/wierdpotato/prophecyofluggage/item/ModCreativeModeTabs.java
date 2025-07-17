@@ -8,6 +8,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wierdpotato.prophecyofluggage.ProphecyofLuggage;
+import net.wierdpotato.prophecyofluggage.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -18,6 +19,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.prophecyofluggage.luggage_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.LUGGAGE.get());
+                        output.accept(ModBlocks.LUGGAGE_BLOCK.get());
 
                     })
                     .build());

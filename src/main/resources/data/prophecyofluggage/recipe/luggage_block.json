@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "l": {
+      "item": "prophecyofluggage:luggage"
+    }
+  },
+  "pattern": [
+    "lll",
+    "lll",
+    "lll"
+  ],
+  "result": {
+    "count": 1,
+    "id": "prophecyofluggage:luggage_block"
+  }
+}

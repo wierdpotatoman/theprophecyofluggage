@@ -7,6 +7,6 @@
     "east": "prophecyofluggage:block/luggage_three",
     "south": "prophecyofluggage:block/luggage_one",
     "west": "prophecyofluggage:block/luggage_two",
-    "particles": "prophecyofluggage:block/luggage_four"
+    "particle": "prophecyofluggage:block/luggage_one"
   }
 }
