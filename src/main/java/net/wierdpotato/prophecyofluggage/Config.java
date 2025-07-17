@@ -1,4 +1,4 @@
-package net.wierdpotato.luggageprophecy;
+package net.wierdpotato.prophecyofluggage;
 
 import java.util.List;
 

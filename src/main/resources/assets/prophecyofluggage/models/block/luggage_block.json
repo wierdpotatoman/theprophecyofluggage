@@ -1,0 +1,12 @@
+{
+"parent": "minecraft:block/cube",
+  "textures": {
+    "down": "prophecyofluggage:block/luggage_four",
+    "up": "prophecyofluggage:block/luggage_six",
+    "north": "prophecyofluggage:block/luggage_five",
+    "east": "prophecyofluggage:block/luggage_three",
+    "south": "prophecyofluggage:block/luggage_one",
+    "west": "prophecyofluggage:block/luggage_two",
+    "particles": "prophecyofluggage:block/luggage_four"
+  }
+}

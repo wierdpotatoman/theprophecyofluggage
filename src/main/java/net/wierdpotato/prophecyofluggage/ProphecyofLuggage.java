@@ -1,5 +1,9 @@
-package net.wierdpotato.luggageprophecy;
+package net.wierdpotato.prophecyofluggage;
 
+import net.minecraft.world.item.CreativeModeTabs;
+import net.wierdpotato.prophecyofluggage.block.ModBlocks;
+import net.wierdpotato.prophecyofluggage.item.ModCreativeModeTabs;
+import net.wierdpotato.prophecyofluggage.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -21,7 +25,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 @Mod(ProphecyofLuggage.MOD_ID)
 public class ProphecyofLuggage {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "theprophecyofluggage";
+    public static final String MOD_ID = "prophecyofluggage";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
@@ -34,6 +38,11 @@ public class ProphecyofLuggage {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -48,6 +57,14 @@ public class ProphecyofLuggage {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.LUGGAGE_BLOCK);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.LUGGAGE);
+        }
 
     }
 
