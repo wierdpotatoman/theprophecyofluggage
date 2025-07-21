@@ -1,0 +1,11 @@
+{
+  "flintnsteel": {
+    "sounds": [
+      {
+        "name": "prophecyofluggage:soundfiles/flintnsteel",
+        "type": "sound",
+        "volume": 1
+      }
+    ]
+  }
+}

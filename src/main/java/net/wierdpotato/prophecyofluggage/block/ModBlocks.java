@@ -9,6 +9,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wierdpotato.prophecyofluggage.ProphecyofLuggage;
+import net.wierdpotato.prophecyofluggage.block.custom.LeanBlock;
 import net.wierdpotato.prophecyofluggage.item.ModItems;
 
 import java.util.function.Supplier;
@@ -20,6 +21,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> LUGGAGE_BLOCK = registerBlock("luggage_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1f).sound(SoundType.COPPER)));
+
+    public static final DeferredBlock<Block> LEAN_BLOCK = registerBlock("lean_block",
+            () -> new LeanBlock(BlockBehaviour.Properties.of()
+                    .strength(2f).sound(SoundType.GLASS)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
