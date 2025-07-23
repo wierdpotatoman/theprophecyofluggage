@@ -1,4 +1,4 @@
-package net.wierdpotato.prophecyofluggage.soundevent;
+package net.wierdpotato.prophecyofluggage.sound;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -14,5 +14,4 @@ public final class ModSoundEvents {
             "flintnsteel",
             () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("prophecyofluggage","flintnsteel"))
     );
-private ModSoundEvents() {}
 }

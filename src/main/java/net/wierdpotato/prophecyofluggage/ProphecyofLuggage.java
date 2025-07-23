@@ -3,7 +3,7 @@ package net.wierdpotato.prophecyofluggage;
 import net.wierdpotato.prophecyofluggage.block.ModBlocks;
 import net.wierdpotato.prophecyofluggage.item.ModCreativeModeTabs;
 import net.wierdpotato.prophecyofluggage.item.ModItems;
-import net.wierdpotato.prophecyofluggage.soundevent.ModSoundEvents;
+import net.wierdpotato.prophecyofluggage.sound.ModSoundEvents;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -29,9 +29,10 @@ public class ProphecyofLuggage {
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
+
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public ProphecyofLuggage(IEventBus modEventBus, ModContainer modContainer) {
+    public ProphecyofLuggage(IEventBus modEventBus , ModContainer modContainer) {
         // Register the commonSetup method for modloading
         ModSoundEvents.SOUND_EVENTS.register(modEventBus);
 

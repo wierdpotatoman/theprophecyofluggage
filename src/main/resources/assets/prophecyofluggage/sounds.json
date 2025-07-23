@@ -1,0 +1,11 @@
+{
+  "flintnsteel": {
+    "sounds": [
+      {
+        "name": "prophecyofluggage:flintnsteel",
+        "volume": 1,
+        "pitch": 1
+      }
+    ]
+  }
+}
