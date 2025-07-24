@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LUGGAGE_BLOCK.get());
                         output.accept(ModBlocks.LEAN_BLOCK.get());
                         output.accept(ModItems.JACKBLAKC.get());
+                        output.accept(ModItems.JACKBLAKC_CHAR.get());
 
                     })
                     .build());

@@ -5,6 +5,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wierdpotato.prophecyofluggage.ProphecyofLuggage;
+import net.wierdpotato.prophecyofluggage.item.custom.FuelItem;
 import net.wierdpotato.prophecyofluggage.item.custom.jackblakc;
 
 public class ModItems {
@@ -14,6 +15,8 @@ public static final DeferredItem<Item> LUGGAGE = ITEMS.register("luggage",
         () -> new Item(new Item.Properties()));
 public static final DeferredItem<Item> JACKBLAKC = ITEMS.register("jackblakc",
         () -> new jackblakc(new Item.Properties()));
+public static final DeferredItem<Item> JACKBLAKC_CHAR = ITEMS.register("jackblakc_char",
+        () -> new FuelItem(new Item.Properties(), 4000));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

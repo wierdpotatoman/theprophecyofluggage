@@ -14,11 +14,10 @@ public class jackblakc extends Item {
     public jackblakc(Properties properties) {
         super(properties);
     }
-
     @Override
     public InteractionResult interactLivingEntity(ItemStack stack, Player player, LivingEntity interactionTarget, InteractionHand usedHand) {
         if (!player.level().isClientSide) {
-            player.level().playSound(null, player.blockPosition(), ModSoundEvents.FLINTNSTEEL.get(), SoundSource.PLAYERS, 1.0f, 1.0f
+            player.level().playSound(player, player.blockPosition(), ModSoundEvents.FLINTNSTEEL.get(), SoundSource.PLAYERS, 1.0f, 1.0f
             );
 
                 interactionTarget.setRemainingFireTicks(80);
@@ -34,6 +33,8 @@ public class jackblakc extends Item {
 
         return InteractionResult.SUCCESS;
     }
+
+
 
 }
 
