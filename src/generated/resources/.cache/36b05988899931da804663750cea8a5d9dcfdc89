@@ -1,0 +1,4 @@
+// 1.21	2025-07-24T23:12:05.7983186	Tags for minecraft:block mod id prophecyofluggage
+56160344d44484ab1758d53ddabba4efc3d450ed data/minecraft/tags/block/mineable/pickaxe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_diamond_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_iron_tool.json
