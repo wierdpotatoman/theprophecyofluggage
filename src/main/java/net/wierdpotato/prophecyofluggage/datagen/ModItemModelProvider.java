@@ -16,6 +16,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.JACKBLAKC.get());
         basicItem(ModItems.JACKBLAKC_CHAR.get());
         basicItem(ModItems.LUGGAGE.get());
+        basicItem(ModItems.LEAN_ESSENCE.get());
 
     }
 }

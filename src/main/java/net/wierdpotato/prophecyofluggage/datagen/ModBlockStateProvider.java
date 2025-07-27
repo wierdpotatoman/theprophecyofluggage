@@ -16,6 +16,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.LEAN_BLOCK);
+        blockWithItem(ModBlocks.LEAN_ORE);
 
     }
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

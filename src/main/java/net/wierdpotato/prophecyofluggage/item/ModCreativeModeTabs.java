@@ -20,11 +20,13 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LUGGAGE.get()))
                     .title(Component.translatable("creativetab.prophecyofluggage.luggage_items"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.LUGGAGE.get());
                         output.accept(ModBlocks.LUGGAGE_BLOCK.get());
                         output.accept(ModBlocks.LEAN_BLOCK.get());
+                        output.accept(ModBlocks.LEAN_ORE.get());
+                        output.accept(ModItems.LUGGAGE.get());
                         output.accept(ModItems.JACKBLAKC.get());
                         output.accept(ModItems.JACKBLAKC_CHAR.get());
+                        output.accept(ModItems.LEAN_ESSENCE.get());
 
                     })
                     .build());

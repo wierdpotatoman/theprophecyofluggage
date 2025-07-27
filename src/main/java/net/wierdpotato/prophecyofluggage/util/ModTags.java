@@ -19,7 +19,8 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> LEANABLE_ITEMS = createTag("leanable_items");
+        public static final TagKey<Item> LEANBLOCK_STEVE = createTag("leanblock_steve");
+        public static final TagKey<Item> LEANBLOCK_LEANSLOP = createTag("leanblock_leanslop");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(ProphecyofLuggage.MOD_ID, name));

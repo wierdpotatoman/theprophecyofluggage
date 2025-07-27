@@ -16,6 +16,7 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.wierdpotato.prophecyofluggage.block.ModBlocks;
+import net.wierdpotato.prophecyofluggage.item.ModItems;
 
 import java.util.Set;
 
@@ -28,6 +29,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.LUGGAGE_BLOCK.get());
         dropSelf(ModBlocks.LEAN_BLOCK.get());
+
+        add(ModBlocks.LEAN_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.LEAN_ORE.get(), ModItems.LEAN_ESSENCE.get(), 1, 4));
+
 
 
     }

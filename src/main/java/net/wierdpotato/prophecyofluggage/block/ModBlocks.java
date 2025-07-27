@@ -18,6 +18,10 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(ProphecyofLuggage.MOD_ID);
 
+    public static final DeferredBlock<Block> LEAN_ORE = registerBlock("lean_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).sound(SoundType.STONE)));
+
     public static final DeferredBlock<Block> LUGGAGE_BLOCK = registerBlock("luggage_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1f).sound(SoundType.COPPER)));

@@ -1,2 +1,3 @@
-// 1.21	2025-07-24T23:12:05.8053192	Tags for minecraft:item mod id prophecyofluggage
-a59587c97aeb1c7ee43b4d2764eab3c1ef16673d data/prophecyofluggage/tags/item/leanable_items.json
+// 1.21	2025-07-26T01:04:28.4325617	Tags for minecraft:item mod id prophecyofluggage
+37c931a402307e9892868a03a08eeb00c997e48c data/prophecyofluggage/tags/item/leanblock_leanslop.json
+b7c620763f5aed6253476b78d591bf19ec2436ae data/prophecyofluggage/tags/item/leanblock_steve.json

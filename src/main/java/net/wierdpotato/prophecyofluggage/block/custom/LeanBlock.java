@@ -15,6 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
+import net.wierdpotato.prophecyofluggage.sound.ModSoundEvents;
 import net.wierdpotato.prophecyofluggage.util.ModTags;
 
 public class LeanBlock extends Block {
@@ -27,6 +28,7 @@ public class LeanBlock extends Block {
         if(entity instanceof ItemEntity itemEntity) {
             if(isValidItem(itemEntity.getItem())) {
                 itemEntity.setItem(new ItemStack(Items.AMETHYST_SHARD, itemEntity.getItem().getCount()));
+                level.playSound(null, entity.blockPosition(), ModSoundEvents.ANDROIDNOTIF.get(), SoundSource.BLOCKS,1,1);
             }
 
         }
@@ -35,7 +37,7 @@ public class LeanBlock extends Block {
     }
 
     private boolean isValidItem(ItemStack item) {
-        return item.is(ModTags.Items.LEANABLE_ITEMS);
+        return item.is(ModTags.Items.LEANBLOCK_LEANSLOP);
     }
 
     @Override

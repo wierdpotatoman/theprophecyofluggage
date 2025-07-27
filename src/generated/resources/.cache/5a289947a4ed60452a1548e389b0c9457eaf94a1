@@ -1,4 +1,7 @@
-// 1.21	2025-07-24T23:12:05.8033204	Block States: prophecyofluggage
+// 1.21	2025-07-27T00:43:48.6636733	Block States: prophecyofluggage
 a1b019c9b4e496c051282eb0b48f2c9a17918cc5 assets/prophecyofluggage/blockstates/lean_block.json
+ea972930350665daee1d18b4fa852ca5d835af82 assets/prophecyofluggage/blockstates/lean_ore.json
 9f89df787e9ebde65a40505a572e7bd72560bb2c assets/prophecyofluggage/models/block/lean_block.json
+4cfa7e69b9968c07bd81a34644eb8617e66d9edb assets/prophecyofluggage/models/block/lean_ore.json
 d534b6c5104d05641eac3ac4f4dbbefd736c0002 assets/prophecyofluggage/models/item/lean_block.json
+4e9ae57a7eb279ba40a562e85053c56104d77fa1 assets/prophecyofluggage/models/item/lean_ore.json

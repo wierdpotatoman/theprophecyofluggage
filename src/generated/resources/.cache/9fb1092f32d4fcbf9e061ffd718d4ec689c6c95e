@@ -1,5 +1,9 @@
-// 1.21	2025-07-24T23:12:05.800318	Recipes
+// 1.21	2025-07-26T01:14:04.890911	Recipes
 a56a347a81f99c5a465e835f3570162f6ab75e3f data/minecraft/advancement/recipes/misc/jackblakc_char_from_blasting_jackblakc.json
 63f595f953b2dc0c8d53dec882ba0efc7eab1604 data/minecraft/advancement/recipes/misc/jackblakc_char_from_smelting_jackblakc.json
 7b4a12056cf0eda48ee20989bb60fe514f26ed9d data/minecraft/recipe/jackblakc_char_from_blasting_jackblakc.json
 3c9bae478dd69b55748b631ad5154871efcf1f3f data/minecraft/recipe/jackblakc_char_from_smelting_jackblakc.json
+09a00faed2bb808523931e63a3a831672172fdfb data/prophecyofluggage/advancement/recipes/misc/luggage.json
+0c354dbe3f9a9bd486204fc1d93d61ab270f4f06 data/prophecyofluggage/advancement/recipes/misc/luggage_block.json
+551a9ae03b09f0a3f74948b6066156004a9af800 data/prophecyofluggage/recipe/luggage.json
+661b11ab4fb931bfd5f5018673a508e7a81541d7 data/prophecyofluggage/recipe/luggage_block.json

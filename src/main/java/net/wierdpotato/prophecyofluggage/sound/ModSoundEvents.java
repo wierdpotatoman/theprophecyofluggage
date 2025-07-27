@@ -14,4 +14,8 @@ public final class ModSoundEvents {
             "flintnsteel",
             () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("prophecyofluggage","flintnsteel"))
     );
+    public static final DeferredHolder<SoundEvent, SoundEvent> ANDROIDNOTIF = SOUND_EVENTS.register(
+            "androidnotif",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("prophecyofluggage","androidnotif"))
+    );
 }

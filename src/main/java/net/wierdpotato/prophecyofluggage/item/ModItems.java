@@ -17,6 +17,8 @@ public static final DeferredItem<Item> JACKBLAKC = ITEMS.register("jackblakc",
         () -> new jackblakc(new Item.Properties()));
 public static final DeferredItem<Item> JACKBLAKC_CHAR = ITEMS.register("jackblakc_char",
         () -> new FuelItem(new Item.Properties(), 4000));
+    public static final DeferredItem<Item> LEAN_ESSENCE = ITEMS.register("lean_essence",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

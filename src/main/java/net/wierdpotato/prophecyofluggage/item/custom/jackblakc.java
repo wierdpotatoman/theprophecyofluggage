@@ -17,7 +17,7 @@ public class jackblakc extends Item {
     @Override
     public InteractionResult interactLivingEntity(ItemStack stack, Player player, LivingEntity interactionTarget, InteractionHand usedHand) {
         if (!player.level().isClientSide) {
-            player.level().playSound(player, player.blockPosition(), ModSoundEvents.FLINTNSTEEL.get(), SoundSource.PLAYERS, 1.0f, 1.0f
+            player.level().playSound(null, player.blockPosition(), ModSoundEvents.FLINTNSTEEL.get(), SoundSource.PLAYERS, 1.0f, 1.0f
             );
 
                 interactionTarget.setRemainingFireTicks(80);
